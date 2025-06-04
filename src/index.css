@@ -4,89 +4,89 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 0 0% 98%; /* Off-white #F9F9F9 */
+    --foreground: 222.2 84% 4.9%; /* Dark Gray/Black #0C0A09 */
 
-    --card: 0 0% 100%;
+    --card: 0 0% 100%; /* White */
     --card-foreground: 222.2 84% 4.9%;
 
-    --popover: 0 0% 100%;
+    --popover: 0 0% 100%; /* White */
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 358 100% 67%; /* Coral #FF5A5F (for CTAs) */
+    --primary-foreground: 222.2 84% 4.9%; /* Dark Gray for text on Coral */
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 187 100% 27%; /* Tealish Blue #007A87 */
+    --secondary-foreground: 210 40% 98%; /* Off-white for text on Teal Blue */
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 210 40% 96.1%; /* Light Gray */
+    --muted-foreground: 215.4 16.3% 46.9%; /* Medium Gray */
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 358 100% 67%; /* Coral #FF5A5F */
+    --accent-foreground: 222.2 84% 4.9%; /* Dark Gray for text on Coral */
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84.2% 60.2%; /* Red */
+    --destructive-foreground: 210 40% 98%; /* Light text on Red */
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 210 20% 85%; /* Light Gray #D3D6D9 */
+    --input: 210 20% 85%; /* Light Gray #D3D6D9 */
+    --ring: 358 100% 67%; /* Coral #FF5A5F (for focus ring) */
 
-    --radius: 0.5rem;
+    --radius: 0.5rem; /* 8px */
 
+    /* Fonts */
+    --font-sans: "Open Sans", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-heading: "Montserrat", var(--font-sans);
+
+    /* Sidebar Colors - Light Mode */
     --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-foreground: 222.2 84% 4.9%;
+    --sidebar-primary: 187 100% 27%; /* Tealish Blue */
+    --sidebar-primary-foreground: 210 40% 98%;
+    --sidebar-accent: 187 80% 90%; /* Very Light Teal */
+    --sidebar-accent-foreground: 187 100% 27%; /* Tealish Blue text on Very Light Teal */
+    --sidebar-border: 210 20% 85%;
+    --sidebar-ring: 358 100% 67%; /* Coral */
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 0 0% 10%; /* Dark Gray #1A1A1A */
+    --foreground: 210 40% 98%; /* Off-white #FAFAFD */
 
-    --card: 222.2 84% 4.9%;
+    --card: 0 0% 12%; /* Slightly lighter dark gray #1E1E1E */
     --card-foreground: 210 40% 98%;
 
-    --popover: 222.2 84% 4.9%;
+    --popover: 0 0% 12%; /* Slightly lighter dark gray #1E1E1E */
     --popover-foreground: 210 40% 98%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 358 100% 67%; /* Coral #FF5A5F (vibrant in dark mode) */
+    --primary-foreground: 222.2 84% 4.9%; /* Dark Gray for text on Coral */
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 187 80% 60%; /* Lighter Teal #4DD2E1 for dark mode */
+    --secondary-foreground: 187 100% 15%; /* Dark Teal text #004C53 */
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 210 10% 23%; /* Darker Gray #363B3F */
+    --muted-foreground: 210 15% 65%; /* Lighter Gray #98A0A8 */
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 358 100% 67%; /* Coral #FF5A5F (vibrant in dark mode) */
+    --accent-foreground: 222.2 84% 4.9%; /* Dark Gray for text on Coral */
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 75% 55%; /* More vibrant Red #D94747 for dark mode */
+    --destructive-foreground: 210 40% 98%; /* Light text on Red */
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 210 10% 30%; /* Medium Dark Gray #454A4F */
+    --input: 210 10% 30%; /* Medium Dark Gray #454A4F */
+    --ring: 358 100% 67%; /* Coral #FF5A5F (for focus ring) */
+
+    /* Sidebar Colors - Dark Mode */
+    --sidebar-background: 0 0% 10%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 187 80% 60%; /* Lighter Teal */
+    --sidebar-primary-foreground: 187 100% 15%; /* Dark Teal text */
+    --sidebar-accent: 187 60% 25%; /* Darker Teal accent bg */
+    --sidebar-accent-foreground: 187 80% 75%; /* Light Teal text */
+    --sidebar-border: 210 10% 30%;
+    --sidebar-ring: 358 100% 67%; /* Coral */
   }
 }
 
@@ -97,5 +97,11 @@
 
   body {
     @apply bg-background text-foreground;
+    font-family: var(--font-sans); /* Apply base font to body */
+  }
+
+  /* Optionally apply heading font to h1-h6 if not done by components */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
   }
 }
